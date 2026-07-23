@@ -6,3 +6,8 @@
 Simple Python ShadowSocks client for Windows & Linux & macOS
 
 This tool currently doesn't work, waiting for shadowsocks to update itself to the newest Python structure...
+
+## 📦 Installation
+
+You can download the compiled standalone release for your operating system (Windows, macOS, or Linux) directly from the **[Releases](../../releases)** tab. No Python installation is required! Just download the .zip for your OS, extract, and run.
+
