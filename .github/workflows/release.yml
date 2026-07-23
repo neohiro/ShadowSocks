@@ -45,19 +45,19 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           pyinstaller --noconfirm --onedir --windowed --icon=icon.ico ShadowSocks.PY
-          Compress-Archive -Path "dist\ShadowSocks\*" -DestinationPath "ShadowSocks-Windows.zip" -Force
+          Compress-Archive -Path "dist\ShadowSocks" -DestinationPath "ShadowSocks-Windows.zip" -Force
 
       - name: Build macOS Executable
         if: matrix.os == 'macos-latest'
         run: |
-          pyinstaller --noconfirm --onedir --windowed --icon=icon.ico ShadowSocks.PY
+          pyinstaller --noconfirm --onedir --windowed --icon=icon.icns ShadowSocks.PY
           cd dist
           zip -r ../ShadowSocks-macOS.zip ShadowSocks.app
 
       - name: Build Linux Executable
         if: matrix.os == 'ubuntu-latest'
         run: |
-          pyinstaller --noconfirm --onedir --windowed --icon=icon.ico ShadowSocks.PY
+          pyinstaller --noconfirm --onedir --windowed --icon=icon.png ShadowSocks.PY
           cd dist
           zip -r ../ShadowSocks-Linux.zip ShadowSocks
 
