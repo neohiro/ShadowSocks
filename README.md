@@ -3,11 +3,22 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgray.svg)](https://github.com/)
 [![Build Status](https://github.com/neohiro/ShadowSocks/actions/workflows/release.yml/badge.svg)](https://github.com/neohiro/ShadowSocks/actions)
 
-Simple Python ShadowSocks client for Windows & Linux & macOS
+Simple Python ShadowSocks client for Windows, Linux & macOS
 
-This tool currently doesn't work, waiting for shadowsocks to update itself to the newest Python structure...
+> ⚠️ **Status: currently not functional** — the upstream `shadowsocks` library has not yet been updated for recent Python versions. Development resumes once compatibility lands.
 
 ## 📦 Installation
 
 You can download the compiled standalone release for your operating system (Windows, macOS, or Linux) directly from the **[Releases](../../releases)** tab. No Python installation is required! Just download the .zip for your OS, extract, and run.
+
+## 🛠️ Run from source
+
+```bash
+pip install -r requirements.txt
+python ShadowSocks.PY
+```
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
 
